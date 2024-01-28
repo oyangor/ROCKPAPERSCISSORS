@@ -1,0 +1,86 @@
+body{
+  background-color: #25272e;
+  color: white;
+  font-family: sans-serif;
+}
+
+.intro-picture{
+  height: 200px;
+  margin-left: 50px;
+ 
+}
+.intro-image-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.button-icon{
+  width: 70px;
+  margin: 20px;
+  background-color: #25272e;
+  border: none;
+}
+.button-reset-icon{
+  width: 120px;
+  margin: 20px;
+  background-color: white;
+  border: none;
+  color:black;
+  font-weight: 600;
+  font-size: 30px;
+}
+.buttons-grid{
+  display: flex;
+  justify-content: center;
+}
+.button-main-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro-info{
+  font-size: 30px;
+  font-weight: 800px;
+  margin-left: 450px;
+}
+.computer-move-container
+,.render-result-container
+,.score-container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.render-computerMove
+,.render-playerMove
+,.render-result{
+  margin-left: 15px;
+}
+
+.winsclass1
+,.lossclass1
+,.tieclass1
+,.totalclass1{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.totalgames,.tieclass,.lossclass,.winsclass{
+  margin-left: 15px;
+  margin-right: 5px;
+  padding-left: 1px;
+}
+.winsclass
+,.lossclass
+,.tieclass
+,.totalgames{
+  width: 35px;
+  background-color: lightgreen;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+

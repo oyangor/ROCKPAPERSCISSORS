@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockPaperScissors</title>
+  <link rel="stylesheet" href="RockPaperScissors.css">
+</head>
+<body>
+  <div class="intro-image-container">
+    <img src="picture1.png" class="intro-picture" >
+</div>
+  
+<h2 class="intro-info">make your move, loser 🧐</h2>
+
+<div class="button-main-grid"><div class="buttons-grid">
+ 
+  <button onclick="
+    let playerMove = 'Rock';
+    outcome = playMove('Tie','Loss','Win');
+    document.querySelector('.render-result').innerHTML = outcome;
+    document.querySelector('.render-playerMove').innerHTML = playerMove;
+  " class="button-icon"><img src="rock.svg"  class="picture-icon"></button>
+
+  <button onclick="
+    playerMove = 'Paper'
+    outcome = playMove('Win','Tie','Loss')
+    document.querySelector('.render-result').innerHTML = outcome
+    document.querySelector('.render-playerMove').innerHTML = playerMove
+  " class="button-icon"><img src="paper.svg"  class="picture-icon"></button>
+
+  <button onclick="
+    playerMove = 'Scissors'
+    outcome = playMove('Loss','Win','Tie')
+    document.querySelector('.render-result').innerHTML = outcome
+    document.querySelector('.render-playerMove').innerHTML = playerMove
+  " class="button-icon"><img src="scissors.svg"  class="picture-icon"></button>
+
+  </div>
+
+  <div> <button onclick="
+      resetScores()
+    " class="button-reset-icon">Reset</button>
+    </div>
+ </div>
+  
+<div class="computer-move-container">
+  <h1>Computer-Move:</h1>
+  <h2 class="render-computerMove"></h2>
+</div>
+ 
+<div class="computer-move-container">
+  <h1>Player-Move:</h1>
+  <h2 class="render-playerMove"></h2>
+</div>
+  
+<div class="render-result-container">
+  <h1>Outcome:</h1>
+  <h2 class="render-result"></h2>
+</div>
+
+<div class="score-container">
+  <div class="winsclass1">
+      <h3>Wins:</h3>
+      <h4 class="winsclass"></h4>
+    </div>
+
+  <div class="lossclass1">
+    <h3>Loss:</h3>
+    <h4 class="lossclass"></h4>
+  </div>
+
+  <div class="tieclass1">
+    <h3>Ties:</h3>
+    <h4 class="tieclass"></h4>
+  </div>
+
+  <div class="totalclass1">
+    <h3>Total Games:</h3>
+    <h4 class="totalgames"></h4>
+  </div>
+
+  </div>
+
+  <script src="RockPaperScissors.js"></script>
+</body>
+</html>
