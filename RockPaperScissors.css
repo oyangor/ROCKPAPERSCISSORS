@@ -7,10 +7,7 @@ body{
 .intro-picture{
   height: 200px;
   margin-left: 50px;
-}
-.intro-statement{
-  display: grid;
-  place-items: center;
+ 
 }
 .intro-image-container{
   display:flex;
@@ -33,6 +30,10 @@ body{
   font-weight: 600;
   font-size: 30px;
 }
+.intro-statement{
+  display: grid;
+  place-items: center;
+}
 .buttons-grid{
   display: flex;
   justify-content: center;
@@ -46,7 +47,7 @@ body{
 .intro-info{
   font-size: 30px;
   font-weight: 800px;
-  margin-left: 450px;
+  text-wrap: nowrap;
 }
 .computer-move-container
 ,.render-result-container
